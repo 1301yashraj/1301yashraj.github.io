@@ -30,6 +30,7 @@
   padding-left: 10px;
   border-radius: 10px;
   margin-left: 50px;
+  margin-top: 50px;
 }
 
 @keyframes openclose {
@@ -143,9 +144,12 @@
   letter-spacing: 3px;
 }
 
-/* #about {
-  width: 98%;
-} */
+#tags > #resume:hover {
+  border: 4px solid rgb(26, 112, 242);
+}
+i:hover {
+  color: rgb(26, 112, 242);
+}
 
 #aboutme {
   /* border: 4px solid gold; */
@@ -188,4 +192,104 @@
   font-weight: 700;
   font-size: 20px;
   margin-top: 1px;
+}
+
+#pcontent {
+  margin: auto;
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-around;
+}
+#sephora {
+  width: 35%;
+  border: 4px solid rgb(0, 0, 0);
+  border-radius: 30px;
+  height: auto;
+  padding: 15px;
+}
+#tripvillas {
+  width: 35%;
+  border: 4px solid rgb(0, 0, 0);
+  border-radius: 30px;
+  height: auto;
+  padding: 15px;
+}
+
+#sephora img {
+  width: 100%;
+  margin: auto;
+  border-radius: 30px 30px 0px 0px;
+}
+
+#tripvillas img {
+  width: 100%;
+  margin: auto;
+  border-radius: 30px 30px 0px 0px;
+}
+
+#pcontent h2 {
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: 3px;
+  margin-left: 30px;
+}
+
+#pcontent p {
+  text-align: left;
+  font-size: 18px;
+  padding: 3px;
+}
+
+#btn_pro {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+#btn_pro > a {
+  text-decoration: none;
+  border: 4px solid black;
+  color: black;
+  padding: 2px 15px;
+}
+
+#contact {
+  margin-top: 30px;
+  height: 400px;
+  background-color: black;
+  padding: 30px;
+  color: white;
+}
+
+#contact > h2 {
+  text-align: center;
+  font-size: 38px;
+  color: white;
+
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(to left, #e97373, #000000);
+}
+
+#contact > h1 {
+  text-align: center;
+  font-size: 47px;
+  color: white;
+  letter-spacing: 5px;
+}
+#contact > #cntme {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  justify-content: space-around;
+}
+#contact > #cntme a {
+  text-decoration: none;
+  color: #fff;
+}
+h3 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
 }
