@@ -23,6 +23,15 @@
       href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
       rel="stylesheet"
     />
+
+    <!-- Include the library. -->
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+    />
   </head>
   <body>
     <div id="navbar">
@@ -65,7 +74,7 @@
         <a href="#skills">Skills</a>
       </div>
       <div>
-        <a href="#projects">Projects</a>
+        <a href="#project">Projects</a>
       </div>
       <div>
         <a href="#about">About</a>
@@ -79,14 +88,14 @@
       <div id="content">
         <div id="info">
           <h2>
-            <p>Hi, my name is</p>
+            <p><span style="color: red">Hi</span>, my name is</p>
             <h1 id="name">Yash Raj</h1>
             <h1 id="title">I'am a Full-Stack Java Developer</h1>
           </h2>
         </div>
 
         <div id="pic">
-          <img src=".\02.jpg" alt="PIC HERE" />
+          <img src="./components/02.jpg" alt="PIC HERE" />
         </div>
       </div>
 
@@ -125,7 +134,7 @@
     </div>
 
     <div id="skills">
-      <h2 class="heading">Skills</h2>
+      <h2 class="heading">Tech-Stack</h2>
       <div id="febe">
         <div id="frontend">
           <h2>Frontend</h2>
@@ -166,6 +175,24 @@
       </div>
     </div>
 
+    <div id="softskills">
+      <h2 class="heading">Skills</h2>
+      <div id="softskillscontent">
+        <div>
+          <i class="fas fa-laptop-code" style="font-size: 36px"></i>
+          <p>Data Structure and algorithms</p>
+        </div>
+        <div>
+          <i class="fas fa-users" style="font-size: 36px"></i>
+          <p>Team Work</p>
+        </div>
+        <div>
+          <i class="far fa-star" style="font-size: 36px"></i>
+          <p>Leadership</p>
+        </div>
+      </div>
+    </div>
+
     <div id="project">
       <div class="heading">Project</div>
       <div id="pcontent">
@@ -175,7 +202,7 @@
               href="https://mysephoramasai.netlify.app/homepage.html"
               target="_blank"
             >
-              <img src="./sephora.jpg" alt=""
+              <img src="./components/sephora.jpg" alt=""
             /></a>
           </div>
           <h2>Sephora Clone</h2>
@@ -215,7 +242,7 @@
               href="https://polite-muffin-b118b2.netlify.app/#"
               target="_blank"
             >
-              <img src="./tripvillas.jpg" alt=""
+              <img src="./components/tripvillas.jpg" alt=""
             /></a>
           </div>
           <h2>Tripvillas Clone</h2>
@@ -248,6 +275,13 @@
             </a>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div id="gitstats">
+      <div class="heading">Git-stats</div>
+      <div class="calendar">
+        <!-- Loading stuff -->
       </div>
     </div>
 
@@ -309,4 +343,9 @@
       x.style.display = "block";
     }
   }
+</script>
+<script>
+  GitHubCalendar(".calendar", "1301yashraj");
+  // or enable responsive functionality
+  GitHubCalendar(".calendar", "1301yashraj", { responsive: true });
 </script>

@@ -45,7 +45,7 @@ a {
   animation: openclose 5s ease-in-out 1;
   background-color: black;
   color: #fff;
-  width: 12%;
+  width: 22%;
   padding-left: 10px;
   border-radius: 10px;
   margin-left: 50px;
@@ -122,6 +122,10 @@ a {
   width: 98%;
   /* border: 2px solid red; */
   margin: auto;
+  background-image: url("./components/lines.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 #home > #content {
   display: flex;
@@ -161,6 +165,7 @@ a {
   font-weight: 600;
   border-radius: 10px;
   letter-spacing: 3px;
+  background-color: #f6faf9;
 }
 
 #tags > #resume:hover {
@@ -208,6 +213,21 @@ i:hover {
 }
 
 #fb_design > div > p {
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 1px;
+}
+#softskillscontent {
+  display: flex;
+  justify-content: space-around;
+}
+#softskillscontent > div {
+  display: block;
+  margin-top: 40px;
+  /* border: 2px solid teal; */
+  text-align: center;
+}
+#softskillscontent > div > p {
   font-weight: 700;
   font-size: 20px;
   margin-top: 1px;
@@ -311,8 +331,16 @@ h3 {
 #menuToggle {
   visibility: hidden;
 }
+#gitstats > #heading {
+  width: 45%;
+}
+.calendar {
+  width: 95%;
+  margin: auto;
+  padding-top: 50px;
+}
 
-@media screen and (min-width: 250px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 720px) {
   #navbar {
     display: none;
   }
@@ -374,8 +402,21 @@ h3 {
   #contact > h1 {
     font-size: 24px;
   }
+
   #cntme {
     display: block;
+  }
+  #pcontent {
+    display: block;
+  }
+  #softskillscontent {
+    display: block;
+    justify-content: space-around;
+  }
+  .calendar {
+    width: 95%;
+    margin: auto;
+    padding-top: 50px;
   }
 }
 
@@ -446,5 +487,9 @@ h3 {
   }
   #cntme {
     display: block;
+  }
+  #softskillscontent {
+    display: block;
+    justify-content: space-around;
   }
 }
