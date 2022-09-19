@@ -226,6 +226,9 @@ i:hover {
   height: auto;
   padding: 15px;
 }
+.cards:hover {
+  border: 4px solid rgb(26, 112, 242);
+}
 
 #sephora img {
   width: 100%;
@@ -344,8 +347,11 @@ h3 {
   h2 {
     text-align: center;
   }
+  #project {
+    margin: auto;
+  }
   .cards {
-    width: 90%;
+    width: 80%;
     margin: auto;
     border: 4px solid rgb(0, 0, 0);
     border-radius: 30px;
@@ -396,8 +402,11 @@ h3 {
   h2 {
     text-align: center;
   }
+  #project {
+    margin: auto;
+  }
   .cards {
-    width: 90%;
+    width: 80%;
     margin: auto;
     border: 4px solid rgb(0, 0, 0);
     border-radius: 30px;
