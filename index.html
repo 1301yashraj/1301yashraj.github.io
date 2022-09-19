@@ -26,11 +26,53 @@
   </head>
   <body>
     <div id="navbar">
-      <div><p>Home</p></div>
-      <div><p>About</p></div>
-      <div><p>Skills</p></div>
-      <div><p>Project</p></div>
-      <div><p>Contact</p></div>
+      <div>
+        <p><a href="#home">Home</a></p>
+      </div>
+      <div>
+        <p>
+          <a href="#about">About</a>
+        </p>
+      </div>
+      <div>
+        <p>
+          <a href="#skills">Skills</a>
+        </p>
+      </div>
+      <div>
+        <p>
+          <a href="#project">Project</a>
+        </p>
+      </div>
+      <div>
+        <p>
+          <a href="#contact">Contact</a>
+        </p>
+      </div>
+    </div>
+
+    <div id="menuToggle">
+      <span onclick="myFunction()">
+        <i class="bx bx-menu" style="font-size: 3rem"></i>
+      </span>
+    </div>
+
+    <div id="myLinks">
+      <div>
+        <a href="#home">Home</a>
+      </div>
+      <div>
+        <a href="#skills">Skills</a>
+      </div>
+      <div>
+        <a href="#projects">Projects</a>
+      </div>
+      <div>
+        <a href="#about">About</a>
+      </div>
+      <div>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
 
     <div id="home">
@@ -61,7 +103,7 @@
           <i class="fa fa-github" style="font-size: 36px"></i>
         </div>
 
-        <div id="resume">
+        <div id="resume" onclick="gotoResume()">
           <p>Resume</p>
         </div>
       </div>
@@ -127,7 +169,7 @@
     <div id="project">
       <div class="heading">Project</div>
       <div id="pcontent">
-        <div id="sephora">
+        <div id="sephora" class="cards">
           <div>
             <a
               href="https://mysephoramasai.netlify.app/homepage.html"
@@ -167,7 +209,7 @@
           </div>
         </div>
 
-        <div id="tripvillas">
+        <div id="tripvillas" class="cards">
           <div>
             <a
               href="https://polite-muffin-b118b2.netlify.app/#"
@@ -252,3 +294,19 @@
     </div>
   </body>
 </html>
+<script>
+  function gotoResume() {
+    let URL =
+      "https://drive.google.com/file/d/1U07tT1AyvYy4hijq7eddt7PZX7pHutIq/view?usp=sharing";
+    var win = window.open(URL, "_blank");
+  }
+
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+</script>

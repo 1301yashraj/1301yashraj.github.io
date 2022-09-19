@@ -2,7 +2,26 @@
 
 * {
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#myLinks {
+  display: none;
+}
+#myLinks > div {
+  text-align: center;
+  margin-top: 4px;
+  padding: 4px;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
 #navbar {
   position: sticky;
   z-index: 2;
@@ -124,7 +143,7 @@
   margin-right: 0%;
 }
 #pic > img {
-  width: 40%;
+  width: 60%;
 }
 
 #tags {
@@ -200,14 +219,7 @@ i:hover {
   display: flex;
   justify-content: space-around;
 }
-#sephora {
-  width: 35%;
-  border: 4px solid rgb(0, 0, 0);
-  border-radius: 30px;
-  height: auto;
-  padding: 15px;
-}
-#tripvillas {
+.cards {
   width: 35%;
   border: 4px solid rgb(0, 0, 0);
   border-radius: 30px;
@@ -292,4 +304,108 @@ h3 {
   margin-top: 60px;
   margin-bottom: 60px;
   text-align: center;
+}
+#menuToggle {
+  visibility: hidden;
+}
+
+@media all and (min-width: 480px) and (max-width: 720px) {
+  #navbar {
+    display: none;
+  }
+  #menuToggle {
+    visibility: visible;
+  }
+  .heading {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    animation: openclose 5s ease-in-out 1;
+    background-color: black;
+    color: #fff;
+    width: 32%;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+  #home > #tags {
+    display: block;
+  }
+  #home > #tags > div {
+    margin-top: 20px;
+  }
+  #febe {
+    display: block;
+  }
+  #febe > #fb_design {
+    display: block;
+  }
+  h2 {
+    text-align: center;
+  }
+  .cards {
+    width: 90%;
+    margin: auto;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    height: auto;
+    padding: 15px;
+    margin-top: 30px;
+  }
+  .cards:hover {
+    border: 4px solid rgb(26, 112, 242);
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 479px) {
+  #navbar {
+    display: none;
+  }
+  #menuToggle {
+    visibility: visible;
+  }
+  .heading {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    animation: openclose 5s ease-in-out 1;
+    background-color: black;
+    color: #fff;
+    width: 42%;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+  #pcontent {
+    display: block;
+  }
+  #home > #tags {
+    display: block;
+  }
+  #home > #tags > div {
+    margin-top: 20px;
+  }
+  #febe {
+    display: block;
+  }
+  #febe > #fb_design > div {
+    display: block;
+  }
+  h2 {
+    text-align: center;
+  }
+  .cards {
+    width: 90%;
+    margin: auto;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    height: auto;
+    padding: 15px;
+    margin-top: 30px;
+  }
+  .cards:hover {
+    border: 4px solid rgb(26, 112, 242);
+  }
 }
