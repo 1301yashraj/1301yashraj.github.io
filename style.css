@@ -312,7 +312,7 @@ h3 {
   visibility: hidden;
 }
 
-@media all and (min-width: 480px) and (max-width: 720px) {
+@media screen and (min-width: 250px) and (max-width: 768px) {
   #navbar {
     display: none;
   }
@@ -361,6 +361,21 @@ h3 {
   }
   .cards:hover {
     border: 4px solid rgb(26, 112, 242);
+  }
+  #tags > #resume {
+    border: 2px solid black;
+    width: 40%;
+    padding: 1px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    letter-spacing: 2px;
+  }
+  #contact > h1 {
+    font-size: 24px;
+  }
+  #cntme {
+    display: block;
   }
 }
 
@@ -416,5 +431,20 @@ h3 {
   }
   .cards:hover {
     border: 4px solid rgb(26, 112, 242);
+  }
+  #tags > #resume {
+    border: 2px solid black;
+    padding: 1px 15px;
+    width: 40%;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    letter-spacing: 2px;
+  }
+  #contact > h1 {
+    font-size: 24px;
+  }
+  #cntme {
+    display: block;
   }
 }
