@@ -101,15 +101,21 @@
 
       <div id="tags">
         <div>
-          <i
-            class="fa fa-linkedin"
-            style="font-size: 36px"
-            aria-hidden="true"
-          ></i>
+          <a
+            href="https://www.linkedin.com/in/yash-raj-426471118"
+            target="_blank"
+            ><i
+              class="fa fa-linkedin"
+              style="font-size: 36px"
+              aria-hidden="true"
+            ></i
+          ></a>
         </div>
 
         <div>
-          <i class="fa fa-github" style="font-size: 36px"></i>
+          <a href="https://github.com/1301yashraj" target="_blank">
+            <i class="fa fa-github" style="font-size: 36px"></i
+          ></a>
         </div>
 
         <div id="resume" onclick="gotoResume()">
@@ -348,4 +354,9 @@
   GitHubCalendar(".calendar", "1301yashraj");
   // or enable responsive functionality
   GitHubCalendar(".calendar", "1301yashraj", { responsive: true });
+  GitHubCalendar(".calendar", "your-username", {
+    proxy(username) {
+      return fetch(`https://your-proxy.com/github?user=${username}`);
+    },
+  }).then((r) => r.text());
 </script>
