@@ -11,7 +11,15 @@ body {
 
 #myLinks {
   display: none;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: whitesmoke;
+  margin-top: -2px;
+  padding-block: 7px;
 }
+
 #myLinks > div {
   text-align: center;
   margin-top: 4px;
@@ -173,6 +181,18 @@ a {
 }
 i:hover {
   color: rgb(26, 112, 242);
+  font-size: 20px;
+}
+#copy {
+  color: #000000;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-left: 3px;
+}
+#copy:hover {
+  color: rgb(26, 112, 242);
+  font-size: 25px;
 }
 
 #aboutme {
@@ -237,7 +257,8 @@ i:hover {
   margin: auto;
   margin-top: 70px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  padding: 5%;
 }
 .cards {
   width: 35%;
@@ -245,22 +266,29 @@ i:hover {
   border-radius: 30px;
   height: auto;
   padding: 15px;
+  margin: 12px;
 }
 .cards:hover {
   border: 4px solid rgb(26, 112, 242);
 }
 
-#sephora img {
+.cards img {
   width: 100%;
   margin: auto;
   border-radius: 30px 30px 0px 0px;
 }
 
-#tripvillas img {
+/* #tripvillas img {
   width: 100%;
   margin: auto;
   border-radius: 30px 30px 0px 0px;
 }
+
+#cowin img {
+  width: 100%;
+  margin: auto;
+  border-radius: 30px 30px 0px 0px;
+} */
 
 #pcontent h2 {
   font-weight: 500;
@@ -330,6 +358,10 @@ h3 {
 }
 #menuToggle {
   visibility: hidden;
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  left: 0;
 }
 #gitstats > #heading {
   width: 45%;
@@ -340,7 +372,7 @@ h3 {
   padding-top: 50px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 720px) {
+@media screen and (min-width: 480px) and (max-width: 850px) {
   #navbar {
     display: none;
   }

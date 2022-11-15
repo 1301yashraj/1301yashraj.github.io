@@ -143,7 +143,10 @@
           knowledge as a developer.
         </p>
         <br />
-        <p>Drop a mail @ 1301yashraj@gmail.com</p>
+        <p>
+          Drop a mail @ 1301yashraj@gmail.com
+          <i class="bx bx-copy" id="copy"></i>
+        </p>
       </div>
     </div>
 
@@ -250,6 +253,44 @@
           </div>
         </div>
 
+        <div id="cowin" class="cards">
+          <div>
+            <a
+              href="https://drive.google.com/file/d/1kNVhGCzPQu45vE-QH5ap-L0qmlTG6NxF/view?usp=sharing"
+              target="_blank"
+            >
+              <img src="./components/ER_diagram.png" alt=""
+            /></a>
+          </div>
+          <h2>REST API for an Covid-19 Application</h2>
+          <p>
+            A RESTful API web-service for a Covid-19 Application. This API
+            performs all the fundamental CRUD operations of Covid-19 Application
+            platform with user validation at every step.
+            <br />
+            <br />
+            A collaborative project built by a team of 5, executed in 6 days.
+            <br /><br />
+            java | sql | spring-boot | lombok | swagger | java-8 | spring-jpa
+          </p>
+          <div id="btn_pro">
+            <a
+              href="https://github.com/1301yashraj/tall-yak-6508"
+              target="_blank"
+              class="small-btn button"
+            >
+              Code<i class="bx bxl-github"></i>
+            </a>
+            <a
+              href=" https://drive.google.com/file/d/1kNVhGCzPQu45vE-QH5ap-L0qmlTG6NxF/view?usp=sharing"
+              target="_blank"
+              class="small-btn button"
+            >
+              Video<i class="bx bx-link-external"></i>
+            </a>
+          </div>
+        </div>
+
         <div id="tripvillas" class="cards">
           <div>
             <a
@@ -327,14 +368,15 @@
           </a>
         </div>
 
-        <div>
+        <div style="justify-content: center; display: flex">
           <a href="tel:+919752513568" target="_blank">
             <i
               class="fa fa-phone"
               style="font-size: 36px"
               aria-hidden="true"
             ></i>
-            <p>Phone</p>
+
+            <p>9752513568</p>
           </a>
         </div>
       </div>
@@ -367,4 +409,23 @@
       return fetch(`https://your-proxy.com/github?user=${username}`);
     },
   }).then((r) => r.text());
+
+  const copy = document.getElementById("copy");
+  copy.addEventListener("click", () => {
+    navigator.clipboard.writeText("1301yashraj@gmail.com");
+    copy.innerHTML = "copied";
+    setTimeout(() => {
+      copy.innerHTML = null;
+    }, 1000);
+  });
+  function displayWindowSize() {
+    var w = document.documentElement.clientWidth;
+    var myLinks = document.getElementById("myLinks");
+    if (w > 850) {
+      if (myLinks.style.display === "block") {
+        myLinks.style.display = "none";
+      }
+    }
+  }
+  window.addEventListener("resize", displayWindowSize);
 </script>
