@@ -1,395 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yash Raj Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yash Raj Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
 
-    <!-- boxicons lin -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-    <!-- Include the library. -->
-    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+  <!-- boxicons lin -->
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
 
-    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-    />
-  </head>
-  <body>
-    <div id="navbar">
-      <div>
-        <p><a href="#home">Home</a></p>
-      </div>
-      <div>
-        <p>
-          <a href="#about">About</a>
-        </p>
-      </div>
-      <div>
-        <p>
-          <a href="#skills">Skills</a>
-        </p>
-      </div>
-      <div>
-        <p>
-          <a href="#project">Project</a>
-        </p>
-      </div>
-      <div>
-        <p>
-          <a href="#contact">Contact</a>
-        </p>
-      </div>
-      <div>
-        <p>
-          <a onclick="gotoResume()">Resume</a>
-        </p>
-      </div>
+  <!-- Include the library. -->
+  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+  <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+</head>
+
+<body>
+  <div id="navbar">
+    <div>
+      <p><a href="#home">Home</a></p>
     </div>
-
-    <div id="menuToggle">
-      <span onclick="myFunction()">
-        <i class="bx bx-menu" style="font-size: 3rem"></i>
-      </span>
-    </div>
-
-    <div id="myLinks">
-      <div>
-        <a href="#home">Home</a>
-      </div>
-      <div>
-        <a href="#skills">Skills</a>
-      </div>
-      <div>
-        <a href="#project">Projects</a>
-      </div>
-      <div>
+    <div>
+      <p>
         <a href="#about">About</a>
-      </div>
-      <div>
+      </p>
+    </div>
+    <div>
+      <p>
+        <a href="#skills">Skills</a>
+      </p>
+    </div>
+    <div>
+      <p>
+        <a href="#project">Project</a>
+      </p>
+    </div>
+    <div>
+      <p>
         <a href="#contact">Contact</a>
+      </p>
+    </div>
+    <div>
+      <p>
+        <a onclick="gotoResume()">Resume</a>
+      </p>
+    </div>
+  </div>
+
+  <div id="menuToggle">
+    <span onclick="myFunction()">
+      <i class="bx bx-menu" style="font-size: 3rem"></i>
+    </span>
+  </div>
+
+  <div id="myLinks">
+    <div>
+      <a href="#home">Home</a>
+    </div>
+    <div>
+      <a href="#skills">Skills</a>
+    </div>
+    <div>
+      <a href="#project">Projects</a>
+    </div>
+    <div>
+      <a href="#about">About</a>
+    </div>
+    <div>
+      <a href="#contact">Contact</a>
+    </div>
+    <div>
+      <a onclick="gotoResume()">Resume</a>
+    </div>
+  </div>
+
+  <div id="home">
+    <div id="content">
+      <div id="info">
+        <h2>
+          <p><span style="color: red">Hi</span>, my name is</p>
+          <h1 id="name">Yash Raj</h1>
+          <h1 id="title">I'am a Full-Stack Java Developer</h1>
+        </h2>
+      </div>
+
+      <div id="pic">
+        <img src="./components/02.jpg" alt="PIC HERE" />
+      </div>
+    </div>
+
+    <div id="tags">
+      <div>
+        <a href="https://www.linkedin.com/in/yash-raj-426471118" target="_blank"><i class="fa fa-linkedin"
+            style="font-size: 36px" aria-hidden="true"></i></a>
+      </div>
+
+      <div>
+        <a href="https://github.com/1301yashraj" target="_blank">
+          <i class="fa fa-github" style="font-size: 36px"></i></a>
+      </div>
+
+      <div id="resume" onclick="gotoResume()">
+        <p>Resume</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="about">
+    <h2 class="heading">About</h2>
+    <div id="aboutme">
+      <h4>I'am Yash Raj</h4>
+      <p>
+        Data structures and algorithms enthusiast, Quick learner and an
+        aspiring Java Backend developer with core knowledge of SpringBoot
+        framework . Looking forward to applying and enhancing my skills and
+        knowledge as a developer.
+      </p>
+      <br />
+      <p>
+        Drop a mail @ 1301yashraj@gmail.com
+        <i class="bx bx-copy" id="copy"></i>
+      </p>
+    </div>
+  </div>
+
+  <div id="skills">
+    <h2 class="heading">Tech-Stack</h2>
+    <div id="febe">
+      <div id="frontend">
+        <h2>Frontend</h2>
+        <div id="fb_design">
+          <div>
+            <i class="bx bxl-html5 skills-icon" style="font-size: 60px"></i>
+            <p>HTML</p>
+          </div>
+
+          <div>
+            <i class="bx bxl-css3 skills-icon" style="font-size: 60px"></i>
+            <p>CSS3</p>
+          </div>
+
+          <div>
+            <i class="bx bxl-javascript skills-icon" style="font-size: 60px"></i>
+            <p>Javascript</p>
+          </div>
+        </div>
+      </div>
+      <div id="backend">
+        <h2>Backend</h2>
+        <div id="fb_design">
+          <div>
+            <i class="fab fa-java" style="font-size: 60px"></i>
+            <p>Java</p>
+          </div>
+
+          <div>
+            <i class="fa fa-database" style="font-size: 60px"></i>
+            <p>Database</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="softskills">
+    <h2 class="heading">Skills</h2>
+    <div id="softskillscontent">
+      <div>
+        <i class="fas fa-laptop-code" style="font-size: 36px"></i>
+        <p>Data Structure and algorithms</p>
       </div>
       <div>
-        <a onclick="gotoResume()">Resume</a>
+        <i class="fas fa-users" style="font-size: 36px"></i>
+        <p>Team Work</p>
+      </div>
+      <div>
+        <i class="far fa-star" style="font-size: 36px"></i>
+        <p>Leadership</p>
       </div>
     </div>
+  </div>
 
-    <div id="home">
-      <div id="content">
-        <div id="info">
-          <h2>
-            <p><span style="color: red">Hi</span>, my name is</p>
-            <h1 id="name">Yash Raj</h1>
-            <h1 id="title">I'am a Full-Stack Java Developer</h1>
-          </h2>
-        </div>
-
-        <div id="pic">
-          <img src="./components/02.jpg" alt="PIC HERE" />
-        </div>
-      </div>
-
-      <div id="tags">
+  <div id="project">
+    <div class="heading">Project</div>
+    <div id="pcontent">
+      <div id="sephora" class="cards">
         <div>
-          <a
-            href="https://www.linkedin.com/in/yash-raj-426471118"
-            target="_blank"
-            ><i
-              class="fa fa-linkedin"
-              style="font-size: 36px"
-              aria-hidden="true"
-            ></i
-          ></a>
+          <a href="https://mysephoramasai.netlify.app/homepage.html" target="_blank">
+            <img src="./components/sephora.jpg" alt="" /></a>
         </div>
-
-        <div>
-          <a href="https://github.com/1301yashraj" target="_blank">
-            <i class="fa fa-github" style="font-size: 36px"></i
-          ></a>
-        </div>
-
-        <div id="resume" onclick="gotoResume()">
-          <p>Resume</p>
-        </div>
-      </div>
-    </div>
-
-    <div id="about">
-      <h2 class="heading">About</h2>
-      <div id="aboutme">
-        <h4>I'am Yash Raj</h4>
+        <h2>Sephora Clone</h2>
         <p>
-          Data structures and algorithms enthusiast, Quick learner and an
-          aspiring Java Backend developer with core knowledge of SpringBoot
-          framework . Looking forward to applying and enhancing my skills and
-          knowledge as a developer.
+          Sephora is a French multinational retailer of personal care and
+          beauty products.Featuring nearly 340 brands, along with its own
+          private label, Sephora Collection, Sephora offers beauty products
+          including cosmetics, skincare, body. Sephora is owned by luxury
+          conglomerate LVMH as of 1997.
+          <br />
+          <br />
+          A collaborative project, built in 5 days by a team of 5 developers.
+          <br /><br />
+          HTML | CSS | JavaScript | Git | Bootstrap
         </p>
-        <br />
+        <div id="btn_pro">
+          <a href="https://github.com/erGaurav13/saphore-Project" target="_blank" class="small-btn button">
+            Code<i class="bx bxl-github"></i>
+          </a>
+          <a href="https://mysephoramasai.netlify.app/homepage.html" target="_blank" class="small-btn button">
+            Live<i class="bx bx-link-external"></i>
+          </a>
+        </div>
+      </div>
+
+      <div id="cowin" class="cards">
+        <div>
+          <a href="https://drive.google.com/file/d/1kNVhGCzPQu45vE-QH5ap-L0qmlTG6NxF/view?usp=sharing" target="_blank">
+            <img src="./components/ER_diagram.png" alt="" /></a>
+        </div>
+        <h2>REST API for an Covid-19 Application</h2>
         <p>
-          Drop a mail @ 1301yashraj@gmail.com
-          <i class="bx bx-copy" id="copy"></i>
+          A RESTful API web-service for a Covid-19 Application. This API
+          performs all the fundamental CRUD operations of Covid-19 Application
+          platform with user validation at every step.
+          <br />
+          <br />
+          A collaborative project built by a team of 5, executed in 6 days.
+          <br /><br />
+          java | sql | spring-boot | lombok | swagger | java-8 | spring-jpa
         </p>
-      </div>
-    </div>
-
-    <div id="skills">
-      <h2 class="heading">Tech-Stack</h2>
-      <div id="febe">
-        <div id="frontend">
-          <h2>Frontend</h2>
-          <div id="fb_design">
-            <div>
-              <i class="bx bxl-html5 skills-icon" style="font-size: 60px"></i>
-              <p>HTML</p>
-            </div>
-
-            <div>
-              <i class="bx bxl-css3 skills-icon" style="font-size: 60px"></i>
-              <p>CSS3</p>
-            </div>
-
-            <div>
-              <i
-                class="bx bxl-javascript skills-icon"
-                style="font-size: 60px"
-              ></i>
-              <p>Javascript</p>
-            </div>
-          </div>
-        </div>
-        <div id="backend">
-          <h2>Backend</h2>
-          <div id="fb_design">
-            <div>
-              <i class="fab fa-java" style="font-size: 60px"></i>
-              <p>Java</p>
-            </div>
-
-            <div>
-              <i class="fa fa-database" style="font-size: 60px"></i>
-              <p>Database</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="softskills">
-      <h2 class="heading">Skills</h2>
-      <div id="softskillscontent">
-        <div>
-          <i class="fas fa-laptop-code" style="font-size: 36px"></i>
-          <p>Data Structure and algorithms</p>
-        </div>
-        <div>
-          <i class="fas fa-users" style="font-size: 36px"></i>
-          <p>Team Work</p>
-        </div>
-        <div>
-          <i class="far fa-star" style="font-size: 36px"></i>
-          <p>Leadership</p>
-        </div>
-      </div>
-    </div>
-
-    <div id="project">
-      <div class="heading">Project</div>
-      <div id="pcontent">
-        <div id="sephora" class="cards">
-          <div>
-            <a
-              href="https://mysephoramasai.netlify.app/homepage.html"
-              target="_blank"
-            >
-              <img src="./components/sephora.jpg" alt=""
-            /></a>
-          </div>
-          <h2>Sephora Clone</h2>
-          <p>
-            Sephora is a French multinational retailer of personal care and
-            beauty products.Featuring nearly 340 brands, along with its own
-            private label, Sephora Collection, Sephora offers beauty products
-            including cosmetics, skincare, body. Sephora is owned by luxury
-            conglomerate LVMH as of 1997.
-            <br />
-            <br />
-            A collaborative project, built in 5 days by a team of 5 developers.
-            <br /><br />
-            HTML | CSS | JavaScript | Git | Bootstrap
-          </p>
-          <div id="btn_pro">
-            <a
-              href="https://github.com/erGaurav13/saphore-Project"
-              target="_blank"
-              class="small-btn button"
-            >
-              Code<i class="bx bxl-github"></i>
-            </a>
-            <a
-              href="https://mysephoramasai.netlify.app/homepage.html"
-              target="_blank"
-              class="small-btn button"
-            >
-              Live<i class="bx bx-link-external"></i>
-            </a>
-          </div>
-        </div>
-
-        <div id="cowin" class="cards">
-          <div>
-            <a
-              href="https://drive.google.com/file/d/1kNVhGCzPQu45vE-QH5ap-L0qmlTG6NxF/view?usp=sharing"
-              target="_blank"
-            >
-              <img src="./components/ER_diagram.png" alt=""
-            /></a>
-          </div>
-          <h2>REST API for an Covid-19 Application</h2>
-          <p>
-            A RESTful API web-service for a Covid-19 Application. This API
-            performs all the fundamental CRUD operations of Covid-19 Application
-            platform with user validation at every step.
-            <br />
-            <br />
-            A collaborative project built by a team of 5, executed in 6 days.
-            <br /><br />
-            java | sql | spring-boot | lombok | swagger | java-8 | spring-jpa
-          </p>
-          <div id="btn_pro">
-            <a
-              href="https://github.com/1301yashraj/tall-yak-6508"
-              target="_blank"
-              class="small-btn button"
-            >
-              Code<i class="bx bxl-github"></i>
-            </a>
-            <a
-              href=" https://drive.google.com/file/d/1kNVhGCzPQu45vE-QH5ap-L0qmlTG6NxF/view?usp=sharing"
-              target="_blank"
-              class="small-btn button"
-            >
-              Video<i class="bx bx-link-external"></i>
-            </a>
-          </div>
-        </div>
-
-        <div id="tripvillas" class="cards">
-          <div>
-            <a
-              href="https://polite-muffin-b118b2.netlify.app/#"
-              target="_blank"
-            >
-              <img src="./components/tripvillas.jpg" alt=""
-            /></a>
-          </div>
-          <h2>Tripvillas Clone</h2>
-          <p>
-            Tripvillas is the leading Holiday Home Rental website in Asia.
-            Through our website travelers can browse through thousands of family
-            owned holiday homes and quaint homestays and make the choice to book
-            one of these properties instead of staying in a hotel or serviced
-            apartment.
-            <br />
-            <br />
-            A collaborative project built by a team of 5, executed in 6 days.
-            <br /><br />
-            HTML | CSS | JavaScript | Git | Bootstrap
-          </p>
-          <div id="btn_pro">
-            <a
-              href="https://github.com/1301yashraj/fleet-lock-616"
-              target="_blank"
-              class="small-btn button"
-            >
-              Code<i class="bx bxl-github"></i>
-            </a>
-            <a
-              href="https://polite-muffin-b118b2.netlify.app/#"
-              target="_blank"
-              class="small-btn button"
-            >
-              Live<i class="bx bx-link-external"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="gitstats">
-      <div class="heading">Git-stats</div>
-      <div class="calendar">
-        <!-- Loading stuff -->
-      </div>
-    </div>
-
-    <div id="contact">
-      <h2>Get in touch</h2>
-      <h1>Yash Raj</h1>
-      <div id="cntme">
-        <div>
-          <a
-            href="https://www.linkedin.com/in/yash-raj-426471118/"
-            target="_blank"
-          >
-            <i
-              class="fa fa-linkedin"
-              style="font-size: 36px"
-              aria-hidden="true"
-            ></i>
-            <p>Linkedin</p>
+        <div id="btn_pro">
+          <a href="https://github.com/1301yashraj/tall-yak-6508" target="_blank" class="small-btn button">
+            Code<i class="bx bxl-github"></i>
           </a>
-        </div>
-        <div>
-          <a href="mailto:1301yashraj@gmail.com" target="_blank">
-            <i
-              class="fa fa-envelope"
-              style="font-size: 36px"
-              aria-hidden="true"
-            ></i>
-            <p>Email</p>
-          </a>
-        </div>
-
-        <div style="justify-content: center; display: flex">
-          <a href="tel:+919752513568" target="_blank">
-            <i
-              class="fa fa-phone"
-              style="font-size: 36px"
-              aria-hidden="true"
-            ></i>
-
-            <p>9752513568</p>
+          <a href=" https://drive.google.com/file/d/1kNVhGCzPQu45vE-QH5ap-L0qmlTG6NxF/view?usp=sharing" target="_blank"
+            class="small-btn button">
+            Video<i class="bx bx-link-external"></i>
           </a>
         </div>
       </div>
-      <h3>© 2022 copyright all right reserved</h3>
+
+      <div id="tripvillas" class="cards">
+        <div>
+          <a href="https://polite-muffin-b118b2.netlify.app/#" target="_blank">
+            <img src="./components/tripvillas.jpg" alt="" /></a>
+        </div>
+        <h2>Tripvillas Clone</h2>
+        <p>
+          Tripvillas is the leading Holiday Home Rental website in Asia.
+          Through our website travelers can browse through thousands of family
+          owned holiday homes and quaint homestays and make the choice to book
+          one of these properties instead of staying in a hotel or serviced
+          apartment.
+          <br />
+          <br />
+          A collaborative project built by a team of 5, executed in 6 days.
+          <br /><br />
+          HTML | CSS | JavaScript | Git | Bootstrap
+        </p>
+        <div id="btn_pro">
+          <a href="https://github.com/1301yashraj/fleet-lock-616" target="_blank" class="small-btn button">
+            Code<i class="bx bxl-github"></i>
+          </a>
+          <a href="https://polite-muffin-b118b2.netlify.app/#" target="_blank" class="small-btn button">
+            Live<i class="bx bx-link-external"></i>
+          </a>
+        </div>
+      </div>
     </div>
-  </body>
+  </div>
+
+  <div id="gitstats">
+    <div class="heading">Git-stats</div>
+    <div class="calendar">
+      <!-- Loading stuff -->
+    </div>
+  </div>
+
+  <div id="contact">
+    <h2>Get in touch</h2>
+    <h1>Yash Raj</h1>
+    <div id="cntme">
+      <div>
+        <a href="https://www.linkedin.com/in/yash-raj-426471118/" target="_blank">
+          <i class="fa fa-linkedin" style="font-size: 36px" aria-hidden="true"></i>
+          <p>Linkedin</p>
+        </a>
+      </div>
+      <div>
+        <a href="mailto:1301yashraj@gmail.com" target="_blank">
+          <i class="fa fa-envelope" style="font-size: 36px" aria-hidden="true"></i>
+          <p>Email</p>
+        </a>
+      </div>
+
+      <div style="justify-content: center; display: flex">
+        <a href="tel:+919752513568" target="_blank">
+          <i class="fa fa-phone" style="font-size: 36px" aria-hidden="true"></i>
+
+          <p>9752513568</p>
+        </a>
+      </div>
+    </div>
+    <h3>© 2022 copyright all right reserved</h3>
+  </div>
+</body>
+
 </html>
 <script>
+
   function gotoResume() {
-    let URL =
-      "https://drive.google.com/file/d/1U07tT1AyvYy4hijq7eddt7PZX7pHutIq/view?usp=sharing";
-    var win = window.open(URL, "_blank");
+    const resumeName = "Yash_Raj_Java_Backend_Developer.pdf";
+    const viewURL =
+      // "https://drive.google.com/file/d/1U07tT1AyvYy4hijq7eddt7PZX7pHutIq/view?usp=sharing" //old link;
+      "https://drive.google.com/file/d/15K3MeJsnN602A3jSg6pMau84MXvnoBo3/view?usp=sharing";
+    const downloadURL =
+      "https://drive.google.com/uc?export=download&id=15K3MeJsnN602A3jSg6pMau84MXvnoBo3"
+    this.viewResume(viewURL);
+    this.downloadResume(downloadURL, resumeName);
   }
+
+  function viewResume(url) {
+    window.open(url, "_blank");
+  }
+
+  function downloadResume(url, fileName) {
+    // Trigger file download
+    const anchor = document.createElement("a");
+    anchor.href = url;
+    anchor.download = fileName; // Optional: specify download file name
+    anchor.click();
+  }
+
 
   function myFunction() {
     var x = document.getElementById("myLinks");
